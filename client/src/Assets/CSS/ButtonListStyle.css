@@ -1,0 +1,482 @@
+/* ---------------------------------- */
+/* Buttons
+------------------------------------- */
+
+button {
+  vertical-align: middle;
+}
+
+span.button,
+button.button,
+input[type="button"],
+input[type="submit"],
+a.button {
+  background-color: #66676b;
+  top: 0;
+  padding: 10px 20px;
+  line-height: 24px;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(102, 103, 107, 0.15);
+}
+
+/* Icons Aligment*/
+.button i[class^="icon-material"],
+button.button i[class^="icon-material"],
+input[type="button"] i[class^="icon-material"],
+input[type="submit"] i[class^="icon-material"],
+a.button i[class^="icon-material"] {
+  font-size: 18px;
+  height: 0;
+  width: 18px;
+  line-height: 0;
+  top: 2px;
+  position: relative;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.button i[class^="icon-feather"],
+button.button i[class^="icon-feather"],
+input[type="button"] i[class^="icon-feather"],
+input[type="submit"] i[class^="icon-feather"],
+a.button i[class^="icon-feather"] {
+  font-size: 16px;
+  height: 0;
+  width: 16px;
+  line-height: 0;
+  top: 2px;
+  position: relative;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+/* Dark Style */
+button.button.dark,
+input[type="button"].dark,
+input[type="submit"].dark,
+a.button.dark {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Style */
+button.button.gray,
+input[type="button"].gray,
+input[type="submit"].gray,
+a.button.gray {
+  background-color: #eaeaea;
+  color: #666;
+  box-shadow: none;
+}
+
+button.button.gray:hover,
+input[type="button"].gray:hover,
+input[type="submit"].gray:hover,
+a.button.gray:hover {
+  background-color: #e0e0e0;
+}
+
+body .button i.icon-material-outline-arrow-right-alt {
+  font-size: 22px;
+  top: 4px;
+}
+
+.button.full-width {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.button.big {
+  font-size: 18px;
+  padding: 13px 22px;
+}
+
+body .button.big i {
+  font-size: 22px;
+  top: 3px;
+  position: relative;
+}
+
+/* Slide Out Button */
+.button.button-slide-out span {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.button.button-slide-out:hover span {
+  transform: translateY(-10px);
+  opacity: 0;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.button.button-slide-out i {
+  transform: translateY(calc(-50% + 10px));
+  opacity: 0;
+  display: inline-block;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  top: 50%;
+  height: 20px;
+}
+
+.button.button-slide-out:hover i {
+  transform: translateY(calc(-50% + 0px));
+  opacity: 1;
+}
+
+/* Move on Hover */
+.move-on-hover {
+  box-shadow: 0 4px 12px rgba(102, 103, 107, 0.1);
+  transform: translateY(0);
+  transition: 0.3s;
+}
+
+.move-on-hover:hover {
+  box-shadow: 0 4px 12px rgba(102, 103, 107, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Centered Button */
+.centered-button {
+  text-align: center;
+  display: block;
+}
+
+.centered-button .button {
+  margin: 0 auto;
+}
+
+/* Bookmark Button */
+span.bookmark-icon {
+  font-size: 20px;
+  position: absolute;
+  z-index: 101;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  background-color: #eee;
+  color: #c0c0c0;
+  display: block;
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  transition: all 0.4s;
+  line-height: 27px;
+}
+
+.bookmark-icon.bookmarked {
+  animation: bookmarked-shadow 0.3s;
+}
+
+@keyframes bookmarked-shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(254, 179, 66, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
+.bookmark-icon:before {
+  transition: transform 0.4s cubic-bezier(0.8, -0.41, 0.19, 2.5);
+  font-family: "Material-Icons";
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  top: 6px;
+  content: "\e988";
+}
+
+.bookmark-icon:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.bookmark-icon.bookmarked {
+  background-color: #feb342;
+  color: #fff;
+}
+
+.bookmark-icon.bookmarked:before {
+  animation: bookmark-icon 0.5s;
+}
+
+@keyframes bookmark-icon {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* Bookmark Button */
+.bookmark-button {
+  background-color: #404040;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  padding: 0 15px;
+  padding-left: 59px;
+  border-radius: 4px;
+  transition: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark-button .bookmark-icon,
+.bookmark-button:hover .bookmark-icon {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.bookmark-button .bookmark-icon {
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: auto;
+  height: 44px;
+  width: 44px;
+  border-radius: 4px 0 0 4px;
+  pointer-events: none;
+  transition: 0.4s;
+  animation: none;
+}
+
+.bookmark-button .bookmark-icon:before {
+  top: 8px;
+  color: #fff;
+  transition: 0.4s;
+  font-size: 18px;
+}
+
+.bookmark-button.bookmarked {
+  background-color: #feb342;
+  color: #fff;
+  box-shadow: 0 3px 12px rgba(254, 179, 66, 0.2);
+}
+
+.bookmark-button.bookmarked .bookmark-icon:before,
+.bookmark-button:hover .bookmark-icon:before {
+  color: #fff;
+}
+
+.bookmark-button.bookmarked .bookmark-icon,
+.bookmark-button.bookmarked:hover .bookmark-icon {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+.bookmark-button.bookmarked .bookmarked-text,
+.bookmark-button .bookmark-text {
+  display: block;
+}
+
+.bookmark-button.bookmarked .bookmark-text,
+.bookmark-button .bookmarked-text {
+  display: none;
+}
+
+/* ---------------------------------- */
+/* Button with sliding icon
+  ------------------------------------- */
+.button-sliding-icon {
+  text-align: center;
+}
+.button-sliding-icon i {
+  opacity: 0;
+  max-width: 0;
+  transition: 0.25s;
+  display: inline-block;
+  transform: translateX(-20px);
+}
+
+.button-sliding-icon:hover i {
+  max-width: 20px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* For buttons */
+.button.button-sliding-icon {
+  padding-left: 20px;
+  /* padding-right: 10px; */
+}
+
+.button.button-sliding-icon:hover {
+  padding-right: 20px;
+}
+
+.button.button-sliding-icon i {
+  padding-right: 5px;
+}
+
+.button.button-sliding-icon:hover i {
+  max-width: 20px;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---------------------------------- */
+/* List Styles
+  ------------------------------------- */
+.list-3,
+.list-2,
+.list-1 {
+  padding: 3px 0 0 0;
+  font-size: 16px;
+}
+
+.list-3 li,
+.list-2 li,
+.list-1 li {
+  list-style: none;
+  margin: 10px 0;
+  line-height: 27px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.list-3 li:first-child,
+.list-2 li:first-child,
+.list-1 li:first-child {
+  margin-top: 0;
+}
+
+.list-4 li:before,
+.list-3 li:before,
+.list-2 li:before,
+.list-1 li:before {
+  margin: 0;
+  position: relative;
+  color: #66676b;
+  float: left;
+  margin-left: -20px;
+  display: block;
+}
+
+.list-1.gray li:before {
+  color: #777;
+}
+
+.list-2 li,
+.list-2 li {
+  margin-left: 28px;
+}
+
+.list-3 li:before,
+.list-2 li:before {
+  font-family: "Material-Icons";
+  content: "\e928";
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  top: -2px;
+  margin-left: -28px;
+}
+
+.list-3 li:before {
+  content: "\e912";
+  font-family: "Feather-Icons";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.list-1 li:before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  background-color: #66676b;
+  border-radius: 2px;
+  position: relative;
+  top: 9px;
+}
+
+/* Numbered Style */
+.numbered ol {
+  counter-reset: li;
+  list-style: none;
+  padding: 0;
+  margin-left: 18px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.numbered ol li {
+  display: inline-block;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.numbered ol > li::before {
+  content: counter(li);
+  counter-increment: li;
+  font-size: 16px;
+  line-height: 35px;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0;
+  margin-left: 0;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  float: left;
+  left: -18px;
+  font-size: 15px;
+  transform: translateY(-10%);
+}
+
+.numbered.color ol > li::before {
+  border: 1px solid #66676b;
+  color: #66676b;
+}
+
+.numbered.color.filled ol > li::before {
+  border: 1px solid #66676b;
+  color: #fff;
+  background-color: #66676b;
+}
+
+/* ---------------------------------- */
+/* Marks
+  ------------------------------------- */
+mark {
+  background-color: #fcf8e3;
+  color: #8a803e;
+  padding: 1px 5px;
+}
+
+mark.color {
+  background-color: #66676b;
+  border-radius: 4px;
+  color: #fff;
+}

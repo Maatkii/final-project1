@@ -1,0 +1,195 @@
+/* App.css */
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Banner section styles */
+.banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+.banner .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
+/* Features section styles */
+.features {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* How It Works section styles */
+.how-it-works {
+  padding: 50px 0;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.step {
+  text-align: center;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* CTA section styles */
+.cta {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta button:hover {
+  background-color: #cc5500;
+}
+/* Features section styles */
+.features {
+  padding: 80px 0; /* Increased padding for better spacing */
+  background-color: #f8f8f8;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px; /* Increased margin for better separation */
+  padding: 20px; /* Added padding for cards */
+  border-radius: 8px; /* Rounded corners for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.feature h2 {
+  font-size: 2.5rem; /* Increased font size for headings */
+  margin-bottom: 15px; /* Adjusted margin for headings */
+}
+
+.feature p {
+  font-size: 1.2rem; /* Increased font size for content */
+}
+/* How It Works section styles */
+.how-it-works {
+  padding: 80px 0; /* Increased padding for better spacing */
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap; /* Wrapped flex items for responsiveness */
+  justify-content: center;
+  gap: 40px; /* Added gap between steps */
+}
+
+.step {
+  text-align: center;
+  flex: 0 1 calc(33.33% - 40px); /* Adjusted width for each step */
+  padding: 20px; /* Added padding for steps */
+  border-radius: 8px; /* Rounded corners for steps */
+  box-shadow: 0 4px 20px 20px rgb(255 255 255 / 50%); /* Added shadow for depth */
+  background-color: rgb(255 255 255 / 50%);
+}
+
+.step h3 {
+  font-size: 1.8rem; /* Increased font size for step headings */
+  margin-bottom: 10px; /* Adjusted margin for step headings */
+}
+
+.step p {
+  font-size: 1.1rem; /* Increased font size for step content */
+}
+/* CTA section styles */
+.cta {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0; /* Increased padding for better spacing */
+}
+
+.cta h2 {
+  font-size: 2.5rem; /* Increased font size for heading */
+  margin-bottom: 30px; /* Adjusted margin for heading */
+}
+
+.cta button {
+  padding: 15px 30px; /* Increased padding for button */
+  font-size: 1.4rem; /* Increased font size for button text */
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Rounded corners for button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta button:hover {
+  background-color: #cc5500;
+}

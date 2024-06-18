@@ -1,0 +1,78 @@
+/* Second CSS file */
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background-image: url("../../../Assets/images/lmk.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Form container styles */
+.job-post-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.44); /* Semi-transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Form label styles */
+.job-post label {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Input and textarea styles */
+.job-post-form input[type="text"],
+.job-post-form input[type="number"],
+.job-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #00000071; /* Semi-transparent black background for input fields */
+  color: #fff;
+}
+
+/* Textarea field styling */
+textarea {
+  resize: vertical;
+  min-height: 100px; /* Adjust the minimum height as needed */
+}
+
+/* Required field styling */
+input:required,
+textarea:required {
+  border-color: #ff6347; /* Change border color for required fields */
+}
+
+/* Form submit button styling */
+.job-post-form button[type="submit"] {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 30px auto 0;
+  width: 50%;
+}
+
+/* Form submit button hover effect */
+.job-post-form button[type="submit"]:hover {
+  background-color: #ff6600;
+}
+
+/* Form title styling */
+.job-post h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}

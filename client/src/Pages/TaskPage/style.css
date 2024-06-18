@@ -1,0 +1,6 @@
+.single-thumb .range-slider__thumb:first-child {
+  display: none !important;
+}
+.single-thumb .range-slider__range {
+  left: 0 !important;
+}

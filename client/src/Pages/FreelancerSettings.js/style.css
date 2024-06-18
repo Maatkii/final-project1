@@ -1,0 +1,15 @@
+.add-input-button {
+  height: 36px;
+  width: 36px;
+  padding: 0;
+  color: #fff;
+  background-color: #66676b;
+  border-radius: 4px;
+  margin: 6px;
+  font-size: 19px;
+  text-align: center;
+  line-height: 36px;
+}
+.social-input {
+  margin: 0 !important;
+}

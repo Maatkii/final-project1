@@ -1,0 +1,6 @@
+.dropdown-toggle::after {
+  display: none !important;
+}
+.single-thumb .range-slider__thumb:first-of-type {
+  display: none;
+}
